@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEB1 - JavaScript</title>
+</head>
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  if (this.value === 'night') {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+  } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+  }
+  ">
+  <ol>
+    <li><a href="/">HTML</a></li>
+    <li><a href="/">CSS</a></li>
+    <li><a href="/">JavaScript</a></li>
+  </ol>
+  <h2>JavaScript</h2>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ut sit
+    labore error dolore, quidem quo omnis, autem delectus hic rem culpa!
+    Adipisci animi maxime necessitatibus modi doloribus natus hic.
+  </p>
+</body>
+
+</html>
