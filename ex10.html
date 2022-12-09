@@ -18,8 +18,10 @@
     };
     document.write("programmer : " + coworkers.programmer + "<br>");
     document.write("designer : " + coworkers.designer + "<br>");
-    coworkers.bookkeeper = "duru";
+
+    coworkers.bookkeeper = "duru"; //이미 객체가 만들어진 다음 정보 추가하는 법
     document.write("bookkeeper : " + coworkers.bookkeeper + "<br>");
+
     coworkers["data scientist"] = "taeho"; // 띄어쓰기 사용시 사용법
     document.write("data scientist : " + coworkers["data scientist"] + "<br>");
   </script>
@@ -29,6 +31,18 @@
     for (var key in coworkers) {
       document.write(key + ' : ' + coworkers[key] + '<br>');
     }
+  </script>
+
+  <h2>Property & Method</h2>
+  <script>
+    coworkers.showAll = function () {
+      for (var key in this) {
+        document.write(key + ' : ' + this[key] + '<br>');
+      }
+    }
+    coworkers.showAll();
+    // 객체에 소속된 함수 => 메소드
+    // 객체에 소속된 변수 => 프로퍼티
   </script>
 </body>
 
